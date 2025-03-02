@@ -17,3 +17,4 @@ Function 'MyFunction' timed out after 3 seconds 02 Mar 2025 21:57:00,997 [ERROR]
   REPORT RequestId: e40fa3f6-01fd-4d28-b51a-c63f95671205	Init Duration: 0.03 ms	Duration: 3000.00 ms	Billed Duration: 3000 ms	Memory Size: 128 MB	Max Memory Used: 128 MB
   No response from invoke container for MyFunction     
 ```
+[Mother document readme](../news_collection/UPDATES.MD)
