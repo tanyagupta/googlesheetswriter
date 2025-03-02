@@ -7,7 +7,7 @@ import os
 import json
 from bs4 import BeautifulSoup
 
-from urllib.request import unquote
+
 from html import unescape
 
 from pygooglenews import GoogleNews
@@ -18,7 +18,7 @@ limit_for_free_news = 15
 import json
 
 def lambda_handler(event, context):
-   return write_all_news()
+   return main()
 
 
 def get_news(news_type):
@@ -161,9 +161,13 @@ def add_data (**kwargs):
     return  r.text
 
 
-def write_all_news():
+def main():
     categories = ["free","top","world","nation","business","technology","entertainment","science","sports","health"]
 #    categories = ["top","world","nation","business","technology","entertainment","sports","health"]
     for item in categories:
         get_news(item)
         time.sleep(.1)
+
+
+if __name__ == "__main__":
+    main()
