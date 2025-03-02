@@ -10,8 +10,8 @@
          Runtime: python3.8
          CodeUri: .
          Description: Sheets Writer Function
-         MemorySize: 128
-         Timeout: 3
+         MemorySize: 256
+         Timeout: 30
          Events:
            ApiEvent:
              Type: Api
